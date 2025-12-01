@@ -10,7 +10,7 @@ const StylistCard = () => {
   const [select, setSelect] = useState(false);
 
   return (
-    <div className="flex flex-col w-[360px] rounded-2xl bg-neutral-50 border border-neutral-100 shadow-sm overflow-clip">
+    <div className="flex flex-col max-w-[360px] rounded-2xl bg-neutral-50 border border-neutral-100 shadow-xs overflow-clip">
       <img src={stylist} alt="" className="h-48 object-cover" />
       <div className="p-6 flex flex-col gap-3">
         <div className="flex justify-between items-start">

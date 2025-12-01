@@ -28,7 +28,7 @@ const TopBar = ({ user = "Guest" }: { user: string }) => {
             type="text"
             placeholder="Search"
             required
-            className="outline-0"
+            className="outline-0 w-full"
           />
           <IoSearchOutline className="text-neutral-400" />
         </form>

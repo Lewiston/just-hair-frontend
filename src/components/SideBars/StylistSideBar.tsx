@@ -123,7 +123,7 @@ const StylistSideBar = () => {
           <p className={`${collapse && "hide-text"}`}>Notifications</p>
         </div>
         <div
-          className="text-sm text-neutral-500 flex items-center gap-3 p-3 rounded-md active:text-violet-700 font-medium hover:text-violet-700"
+          className="text-sm text-neutral-500 flex items-center gap-3 p-3 rounded-md active:text-violet-700 font-medium hover:text-violet-700 cursor-pointer"
           onClick={handleCollapse}
         >
           {collapse ? (
