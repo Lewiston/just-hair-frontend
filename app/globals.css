@@ -1,5 +1,5 @@
 @import "tailwindcss";
-
+/* 
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -17,10 +17,75 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+} */
+
+/* Custom Tailwind Class for no scroll bar width */
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Edge, Opera */
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply bg-neutral-100 font-sans;
+}
+
+/* Page content */
+.page-content {
+  @apply h-full w-full p-10 pb-36 bg-neutral-100 overflow-y-auto;
+}
+
+/* Side Bar styles */
+.tab {
+  @apply cursor-pointer w-full text-sm text-neutral-500 flex items-center gap-3 p-3 rounded-md font-medium
+  hover:bg-violet-100 hover:text-violet-700 transition duration-400 ease-in-out;
+}
+
+/* Active stylings for side bar */
+.active-tab {
+  @apply bg-violet-100 text-violet-700;
+}
+
+/* Styling tab icons */
+.tab-icon {
+  @apply h-5 w-5;
+}
+
+/* To hide texts on the side bar */
+.hide-text {
+  display: none;
+}
+
+/* General button styling */
+.btn {
+  @apply flex gap-2 items-center justify-center font-bold py-3 px-5 rounded-md cursor-pointer transition duration-400 ease-in-out;
+}
+
+/* For hover on images */
+.img-hover {
+  transform: scale(1, 1);
+  transition: all 0.2s ease-in;
+}
+
+.img-hover:hover {
+  transform: scale(1.02, 1.02);
+}
+
+/* For hover on texts */
+.text-hover {
+  text-decoration: underline;
+  transform: scale(1, 1);
+  transition: all 0.3s ease-in;
+}
+
+.text-hover:hover {
+  transform: scale(1.15, 1.15);
+}
+
+.h2 {
+  @apply font-bold text-3xl;
 }
