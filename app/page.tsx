@@ -1,5 +1,6 @@
 import React from "react";
 import SignIn from "./(pages)/(auth)/sign-in/page";
+import SummaryCard from "./components/SummaryCard/SummaryCard";
 
 const App = () => {
   return (

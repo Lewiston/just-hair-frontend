@@ -25,7 +25,7 @@ const Appointments = () => {
         {/* Left hand side*/}
         <div className="flex flex-col gap-6 w-full">
           {/* Schedules forth coming */}
-          <div className="bg-neutral-50 border border-neutral-200 p-6 flex flex-col gap-6 rounded-2xl">
+          <div className="bg-white border border-neutral-200 p-6 flex flex-col gap-6 rounded-2xl">
             {/* Heading */}
             <h2 className="text-neutral-800 font-medium text-2xl">
               Upcoming Appointments
@@ -40,7 +40,7 @@ const Appointments = () => {
           </div>
 
           {/* Schedules Past */}
-          <div className="bg-neutral-50 border border-neutral-200 p-6 flex flex-col gap-6 rounded-2xl">
+          <div className="bg-white border border-neutral-200 p-6 flex flex-col gap-6 rounded-2xl">
             {/* Heading */}
             <h2 className="text-neutral-800 font-medium text-2xl">
               Past Appointments
