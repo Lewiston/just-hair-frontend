@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from "react";
 import stylist from "@/public/stylist.jpg";
 import stars from "@/public/stars.png";

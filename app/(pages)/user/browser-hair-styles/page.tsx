@@ -1,6 +1,5 @@
 "use client";
 
-import "./BrowserHairStyles.css";
 import greetings_bg from "../../../../public/images/user/greetings_bg.jpg";
 import StylistCard from "../../../components/StylistCard/StylistCard";
 import HairStyleCard from "../../../components/HairStyleCard/HairStyleCard";
@@ -168,7 +167,7 @@ const BrowserHairStyles = () => {
 
       {/* Recommended hair styles */}
       <div className="flex flex-col gap-6">
-        <h2 className="h2 text-neutral-700">Recommended hair styles for you</h2>
+        <h2 className="h2 text-neutral-700">All hair styles for you</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 ">
           <HairStyleCard />
           <HairStyleCard />

@@ -4,15 +4,16 @@
 import { useState } from "react";
 import { PiScissorsFill } from "react-icons/pi";
 import { FaSquareWebAwesome } from "react-icons/fa6";
-import { MdSpaceDashboard } from "react-icons/md";
-import { FaCalendarCheck } from "react-icons/fa";
-import { MdRateReview } from "react-icons/md";
+import { MdSpaceDashboard, MdRateReview } from "react-icons/md";
 import { PiConfettiFill } from "react-icons/pi";
-import { FaUserEdit } from "react-icons/fa";
 import { IoNotifications } from "react-icons/io5";
 import { TbSignature } from "react-icons/tb";
-import { FaChevronRight } from "react-icons/fa";
-import { FaChevronLeft } from "react-icons/fa";
+import {
+  FaChevronRight,
+  FaChevronLeft,
+  FaUserEdit,
+  FaCalendarCheck,
+} from "react-icons/fa";
 import Link from "next/link";
 
 // Defining the ClientSideBar component
