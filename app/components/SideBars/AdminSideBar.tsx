@@ -2,8 +2,8 @@
 
 // Importing necessary libraries and icons
 import React, { useState } from "react";
-import { FaSquareWebAwesome } from "react-icons/fa6";
-import { MdSpaceDashboard } from "react-icons/md";
+import { FaSquareWebAwesome, FaShop } from "react-icons/fa6";
+import { MdSpaceDashboard, MdBusiness } from "react-icons/md";
 import { IoStar } from "react-icons/io5";
 import { FaUserEdit } from "react-icons/fa";
 import { IoNotifications } from "react-icons/io5";
@@ -15,6 +15,7 @@ import { TiAttachmentOutline } from "react-icons/ti";
 import { BiSolidRename } from "react-icons/bi";
 import { FaChevronRight } from "react-icons/fa";
 import { FaChevronLeft } from "react-icons/fa";
+import Link from "next/link";
 
 // Defining the ClientSideBar component
 const AdminSideBar = () => {
@@ -62,77 +63,95 @@ const AdminSideBar = () => {
           collapse && "w-fit"
         }`}
       >
-        <div
+        <Link
+          href="/admin/dashboard"
           className={`tab ${activeTab === 1 && "active-tab"}`}
           onClick={() => handleActiveTab(1)}
         >
           <MdSpaceDashboard className="tab-icon" />
           <p className={`${collapse && "hide-text"}`}>Dashboard</p>
-        </div>
-        <div
+        </Link>
+        <Link
+          href="/admin/clients"
           className={`tab ${activeTab === 2 && "active-tab"}`}
           onClick={() => handleActiveTab(2)}
         >
           <TiGroup className="tab-icon" />
-          <p className={`${collapse && "hide-text"}`}>Clients & Stylists</p>
-        </div>
-        <div
+          <p className={`${collapse && "hide-text"}`}>Clients</p>
+        </Link>
+        <Link
+          href="/admin/stylists"
           className={`tab ${activeTab === 3 && "active-tab"}`}
           onClick={() => handleActiveTab(3)}
         >
-          <PiOfficeChairFill className="tab-icon" />
-          <p className={`${collapse && "hide-text"}`}>Services</p>
-        </div>
-
-        <div
+          <FaShop className="tab-icon" />
+          <p className={`${collapse && "hide-text"}`}>Stylists</p>
+        </Link>
+        <Link
+          href="/admin/services"
           className={`tab ${activeTab === 4 && "active-tab"}`}
           onClick={() => handleActiveTab(4)}
         >
-          <PiHairDryerFill className="tab-icon" />
-          <p className={`${collapse && "hide-text"}`}>Hair Styles</p>
-        </div>
-        <div
+          <PiOfficeChairFill className="tab-icon" />
+          <p className={`${collapse && "hide-text"}`}>Services</p>
+        </Link>
+
+        <Link
+          href="/admin/hair-styles"
           className={`tab ${activeTab === 5 && "active-tab"}`}
           onClick={() => handleActiveTab(5)}
         >
-          <TiAttachmentOutline className="tab-icon" />
-          <p className={`${collapse && "hide-text"}`}>Hair Attachments</p>
-        </div>
-        <div
+          <PiHairDryerFill className="tab-icon" />
+          <p className={`${collapse && "hide-text"}`}>Hair Styles</p>
+        </Link>
+        <Link
+          href="/admin/hair-attachments"
           className={`tab ${activeTab === 6 && "active-tab"}`}
           onClick={() => handleActiveTab(6)}
         >
-          <BiSolidRename className="tab-icon" />
-          <p className={`${collapse && "hide-text"}`}>Hair & Services Alias</p>
-        </div>
-        <div
+          <TiAttachmentOutline className="tab-icon" />
+          <p className={`${collapse && "hide-text"}`}>Hair Attachments</p>
+        </Link>
+        <Link
+          href="/admin/hair-services-alias"
           className={`tab ${activeTab === 7 && "active-tab"}`}
           onClick={() => handleActiveTab(7)}
         >
-          <IoStar className="tab-icon" />
-          <p className={`${collapse && "hide-text"}`}>Rewards</p>
-        </div>
-        <div
+          <BiSolidRename className="tab-icon" />
+          <p className={`${collapse && "hide-text"}`}>Hair & Services Alias</p>
+        </Link>
+        <Link
+          href="/admin/rewards"
           className={`tab ${activeTab === 8 && "active-tab"}`}
           onClick={() => handleActiveTab(8)}
         >
-          <FaMoneyBill className="tab-icon" />
-          <p className={`${collapse && "hide-text"}`}>Revenue</p>
-        </div>
-        <div
+          <IoStar className="tab-icon" />
+          <p className={`${collapse && "hide-text"}`}>Rewards</p>
+        </Link>
+        <Link
+          href="/admin/revenue"
           className={`tab ${activeTab === 9 && "active-tab"}`}
           onClick={() => handleActiveTab(9)}
         >
-          <FaUserEdit className="tab-icon" />
-          <p className={`${collapse && "hide-text"}`}>Settings</p>
-        </div>
-        <div
+          <FaMoneyBill className="tab-icon" />
+          <p className={`${collapse && "hide-text"}`}>Revenue</p>
+        </Link>
+        <Link
+          href="/admin/user-profile"
           className={`tab ${activeTab === 10 && "active-tab"}`}
           onClick={() => handleActiveTab(10)}
         >
+          <FaUserEdit className="tab-icon" />
+          <p className={`${collapse && "hide-text"}`}>Settings</p>
+        </Link>
+        <Link
+          href="/admin/notifications"
+          className={`tab ${activeTab === 11 && "active-tab"}`}
+          onClick={() => handleActiveTab(11)}
+        >
           <IoNotifications className="tab-icon" />
           <p className={`${collapse && "hide-text"}`}>Notifications</p>
-        </div>
+        </Link>
         <div
           className="text-sm text-neutral-500 flex items-center gap-3 p-3 rounded-md active:text-violet-700 font-medium hover:text-violet-700 cursor-pointer"
           onClick={handleCollapse}

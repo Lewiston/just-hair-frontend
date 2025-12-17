@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import "./TopBar.css";
 import { IoSearchOutline } from "react-icons/io5";
 import { IoPower } from "react-icons/io5";
 import profile from "@/public/profile.jpg";

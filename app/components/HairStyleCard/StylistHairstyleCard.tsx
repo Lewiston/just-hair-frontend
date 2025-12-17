@@ -12,8 +12,8 @@ const StylistHairstyleCard = () => {
     >
       {/* Action buttons */}
       <div className="flex gap-4 items-center justify-center absolute right-3 top-3">
-        <FaRegEdit className="h-5 w-5 text-violet-500 hover:scale-[1.2]" />
-        <AiOutlineDelete className="h-5 w-5 text-red-500 hover:scale-[1.2]" />
+        <FaRegEdit className="h-5 w-5 text-violet-500 hover:scale-[1.2] cursor-pointer" />
+        <AiOutlineDelete className="h-5 w-5 text-red-500 hover:scale-[1.2] cursor-pointer" />
       </div>
 
       {/* Content */}
