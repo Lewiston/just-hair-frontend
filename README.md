@@ -1,5 +1,6 @@
 # Just Hair Frontend
 
+Staging URL: [just hair frontend link](https://just-hair-frontend-ch40.onrender.com/)  
 docker image link: https://hub.docker.com/repository/docker/lewiston/just-hair-frontend/general
 
 ## Getting Started
