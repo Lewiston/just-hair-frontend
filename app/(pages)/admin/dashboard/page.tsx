@@ -15,7 +15,7 @@ import HairStyleCard from "@/app/components/HairStyleCard/HairStyleCard";
 import UserWeeklyAppointment from "@/app/components/AppointmentOverview/UserWeeklyAppointment";
 import StylistCard from "@/app/components/StylistCard/StylistCard";
 
-const UserDashboard = () => {
+const AdminDashboard = () => {
   return (
     <div className="flex flex-col gap-6">
       {/* Important Stats */}
@@ -135,4 +135,4 @@ const UserDashboard = () => {
   );
 };
 
-export default UserDashboard;
+export default AdminDashboard;

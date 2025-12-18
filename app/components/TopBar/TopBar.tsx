@@ -7,7 +7,7 @@ import profile from "@/public/profile.jpg";
 import Image from "next/image";
 import Link from "next/link";
 
-const TopBar = ({ user = "Guest" }: { user: string }) => {
+const TopBar = ({ user = "Guest" }: { user?: string }) => {
   // Sign out useState
   const [signOut, setSignOut] = useState(false);
 
