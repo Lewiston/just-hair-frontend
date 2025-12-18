@@ -27,7 +27,7 @@ const ClientUserProfile = () => {
   return (
     <>
       <div className="flex flex-col gap-6">
-        <div className="flex flex-col">
+        <div className="flex flex-col  items-center justify-center">
           {/* Page title */}
           <h1 className="text-base font-medium text-neutral-600">
             Profile Settings

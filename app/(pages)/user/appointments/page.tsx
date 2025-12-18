@@ -13,7 +13,7 @@ const Appointments = () => {
   return (
     <div className="flex flex-col gap-6">
       {/* Page title */}
-      <div className="flex flex-col">
+      <div className="flex flex-col items-center justify-center">
         <h1 className="text-base font-medium text-neutral-600">
           Appointments Rundown
         </h1>
