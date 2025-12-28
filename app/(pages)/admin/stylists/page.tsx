@@ -87,7 +87,7 @@ const ClientsAndStylists = () => {
 
   return (
     <div className="flex flex-col gap-6">
-      <div className="flex flex-col">
+      <div className="flex flex-col items-center justify-center">
         {/* Page title */}
         <h1 className="text-base font-medium text-neutral-600">Stylists</h1>
         <p className="text-sm text-neutral-500">Manage stylists</p>

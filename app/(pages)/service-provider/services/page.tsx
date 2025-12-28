@@ -8,7 +8,7 @@ const Services = () => {
   return (
     <div className="flex flex-col gap-6">
       {/* Page title */}
-      <div className="flex flex-col">
+      <div className="flex flex-col items-center justify-center">
         <h1 className="text-base font-medium text-neutral-600">Services</h1>
         <p className="text-sm text-neutral-500">
           Manage the services offered by you

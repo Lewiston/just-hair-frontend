@@ -237,7 +237,7 @@ const SignUp = () => {
                     <input
                       type="text"
                       name="surname"
-                      id="email"
+                      id="surname"
                       required
                       placeholder="Enter your surname"
                       className="w-full outline-none"
@@ -264,7 +264,7 @@ const SignUp = () => {
                     <input
                       type="text"
                       name="given_name"
-                      id="email"
+                      id="given_name"
                       required
                       placeholder="Enter your given names"
                       className="w-full outline-none"
@@ -540,25 +540,25 @@ const SignUp = () => {
                   </p>
                 </div>
 
-                <div className="flex flex-col gap-6">
+                <Link
+                  href="/user/dashboard"
+                  onClick={() =>
+                    setUserAccount((prev) => ({
+                      ...prev,
+                      role: "client",
+                    }))
+                  }
+                  className="flex flex-col gap-6 img-hover"
+                >
                   <Image
                     src={client}
                     alt="client image"
-                    className="img-hover border-4 border-neutral-50 rounded-2xl w-[800px] h-80 object-cover"
+                    className="border-4 border-neutral-50 rounded-2xl w-[500px] h-[400px] object-cover"
                   />
-                  <Link
-                    href="/user/dashboard"
-                    className="text-hover btn text-neutral-50 w-fit self-center"
-                    onClick={() =>
-                      setUserAccount((prev) => ({
-                        ...prev,
-                        role: "client",
-                      }))
-                    }
-                  >
+                  <button className="btn text-violet-700 w-fit self-center font-bold text-xl p-2 bg-white">
                     I am a client
-                  </Link>
-                </div>
+                  </button>
+                </Link>
               </div>
             </div>
             <div className="right-hand-user-screen p-10 flex flex-col justify-center items-center">
@@ -575,14 +575,23 @@ const SignUp = () => {
                   </p>
                 </div>
 
-                <div className="flex flex-col gap-6">
+                <Link
+                  href="/service-provider/dashboard"
+                  className="flex flex-col gap-6 img-hover"
+                  onClick={() =>
+                    setUserAccount((prev) => ({
+                      ...prev,
+                      role: "service_provider",
+                    }))
+                  }
+                >
                   <Image
                     src={stylist}
                     alt="stylist image"
-                    className="img-hover border-4 border-violet-800 rounded-2xl w-[800px] h-80 object-cover"
+                    className="border-4 border-violet-500 rounded-2xl w-[500px] h-[400px] object-cover"
                   />
                   <button
-                    className="text-hover btn text-violet-800 w-fit self-center"
+                    className="btn text-white w-fit self-center font-bold text-xl p-2 bg-violet-500"
                     onClick={() =>
                       setUserAccount((prev) => ({
                         ...prev,
@@ -592,7 +601,7 @@ const SignUp = () => {
                   >
                     I am a service provider
                   </button>
-                </div>
+                </Link>
               </div>
             </div>
           </div>
